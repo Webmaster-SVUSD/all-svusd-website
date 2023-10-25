@@ -1,1 +1,18 @@
-#all-svusd-website
+ALL SVUSD WEBSITE DOCUMENTATION
+
+Requirements:
+- Install Python https://www.python.org/downloads/
+
+To run and edit this project, you should use a virtual enviornment. Follow the steps below to do so. (The virtual envirment should not be pushed onto the repo and will automatically be ignored.)
+1. Direct to base folder with allsvusdwebsite folder
+2. Run "“python -m venv djangocms"
+3. Activate virtual environment with “djangocms\Scripts\activate.bat”
+    - You are now in the virtual environment
+    - To deactivate and get out of virtual environment, run “deactivate”
+4. Now, you need to install djangocms in the virtual enviornment with  “pip install djangocms-installer”
+    - I also needed to instal pytz with “pip install pytz”
+
+To run the project locally, use "python manage.py runserver"
+Open the link, and when prompted for username and password use
+    Username: allsvusdadmin
+    Password: allsvusd2023

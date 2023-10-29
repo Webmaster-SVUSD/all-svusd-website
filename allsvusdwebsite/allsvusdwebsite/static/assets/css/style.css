@@ -1351,6 +1351,7 @@ section {
 .card img {
   border-radius: 5px;
   margin: 10px;
+  /* max-height: 125px; */
 }
 
 .card-header {

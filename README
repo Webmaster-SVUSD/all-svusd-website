@@ -11,6 +11,7 @@ To run and edit this project, you should use a virtual enviornment. Follow the s
     - To deactivate and get out of virtual environment, run “deactivate”
 4. Now, you need to install djangocms in the virtual enviornment with  “pip install djangocms-installer”
     - I also needed to instal pytz with “pip install pytz”
+5. finally I believe you still need to download all the requirements, cd in to allsvusdwebsite and run "pip install -r requirements.txt command"
 
 To run the project locally, use "python manage.py runserver"
 Open the link, and when prompted for username and password use

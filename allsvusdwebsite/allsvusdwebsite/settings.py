@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kohn-56rm#!#o-$c1^y8v3u3$7w76f##(evg9=k8&+!8u#yi5@'
+SECRET_KEY = '(w=^%fmkbu7lma7$+97p9a_o55%)0m*^@^g(s7t3dz3sdrtw=i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -208,7 +208,13 @@ CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('sidebar_right.html', 'Sidebar Right'),
+    ('index.html', 'Home'),
+    ('events.html', 'Events'),
+    ('impact.html', 'Impact'),
+    ('about.html', 'About'),
+    ('fundraising.html', 'Fundraising'),
+    ('contact.html', 'Contact'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

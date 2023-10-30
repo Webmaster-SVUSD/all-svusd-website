@@ -1,0 +1,220 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SVUSD - {% page_attribute "page_title" %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.ico' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  {% render_block "css" %}
+  <!-- =======================================================
+  * Template Name: MeFamily
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/family-multipurpose-html-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <!-- ======= Header ======= -->
+  {% include 'components/header.html' %}
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(../static/assets/img/home-hero-image.jpg)">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(../static/assets/img/hero-image-2.jpg)">
+        </div>
+
+        <!-- Slide 3 -->
+        <!-- <div class="carousel-item" style="background-image: url(../static/assets/img/hero-image-3.jpg)">
+        </div> -->
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= My & Family Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Support Dual Language Immersion Students TK-12 in SVUSD</h2>
+        </div>
+        <div class="container">
+          {% block QuickLinkContent %}
+	            {% placeholder "QuickLinkContent" %}
+            {% endblock QuickLinkContent %}
+        </div>
+            
+        <!-- <div class="row content">
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="our-story.html" class="btn-learn-more">Learn More</a>
+          </div>
+        </div> -->
+
+      </div>
+    </section><!-- End My & Family Section -->
+    
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-title">
+          <h3>The schools of the Dual Language Immersion Program work closely with prominent organizations to deliver an internationally-recognized education.</h3>
+          <p>
+            {% block SchoolHeaderContent %}
+	            {% placeholder "SchoolHeaderContent" %}
+            {% endblock SchoolHeaderContent %}
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><img src="{% static 'assets/img/schools/SVUSD-school-Logo.png' %}" alt="" class="img-fluid"></div>
+            <h4 class="title"><a href="">Saddleback Valley Unified School District</a></h4>
+            <p class="description">Located in South Orange County, SVUSD oversees the Dual Language Immersion Program. <a href="">Learn More.</a></p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><img src="{% static 'assets/img/schools/Gates-Gator-Logo.png' %}" alt="" class="img-fluid"></div>
+            <h4 class="title"><a href="">Gates Elementary School</a></h4>
+            <p class="description">Providing Dual Language Immersion education for students K-6.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><img src="{% static 'assets/img/schools/Los-Alisos-Lobos-Logo.png' %}" alt="" class="img-fluid"></div>
+            <h4 class="title"><a href="">Los Alisos Intermediate School</a></h4>
+            <p class="description">Continuing the Dual Language Immersion Program for 7th and 8th grades.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><img src="{% static 'assets/img/schools/LHHS-Hawks-Logo.png' %}" alt="" class="img-fluid"></div>
+            <h4 class="title"><a href="">Laguna Hills High School</a></h4>
+            <p class="description">Dual Language Immersion Program for 9th through 12th grades. Graduating seniors receive special recognition from the Ministry of Education of Spain.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><img src="{% static 'assets/img/schools/isa-logo.png' %}" alt="" class="img-fluid"></div>
+            <h4 class="title"><a href="">International Spanish Academy</a></h4>
+            <p class="description">The SVUSD Dual Language Immersion Program has the unique distinction of being recognized by the International Spanish Academy and the Ministry of Education of Spain.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><img src="{% static 'assets/img/schools/CABE-Logo.png' %}" alt="" class="img-fluid"></div>
+            <h4 class="title"><a href="">California Association for Bilingual Education</a></h4>
+            <p class="description">The California Association for Bilingual Education (CABE) is a non-profit organization that promotes bilingual education.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Recent Photos Section ======= -->
+    <!-- <section id="recent-photos" class="recent-photos">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Recent Photos</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="recent-photos-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a href="{% static 'assets/img/recent-photos/recent-photos-1.jpg' %}" class="glightbox"><img src="{% static 'assets/img/recent-photos/recent-photos-1.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="{% static 'assets/img/recent-photos/recent-photos-2.jpg' %}" class="glightbox"><img src="{% static 'assets/img/recent-photos/recent-photos-2.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="{% static 'assets/img/recent-photos/recent-photos-3.jpg' %}" class="glightbox"><img src="{% static 'assets/img/recent-photos/recent-photos-3.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="{% static 'assets/img/recent-photos/recent-photos-4.jpg' %}" class="glightbox"><img src="{% static 'assets/img/recent-photos/recent-photos-4.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="{% static 'assets/img/recent-photos/recent-photos-5.jpg' %}" class="glightbox"><img src="{% static 'assets/img/recent-photos/recent-photos-5.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="{% static 'assets/img/recent-photos/recent-photos-6.jpg' %}" class="glightbox"><img src="{% static 'assets/img/recent-photos/recent-photos-6.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="{% static 'assets/img/recent-photos/recent-photos-7.jpg' %}" class="glightbox"><img src="{% static 'assets/img/recent-photos/recent-photos-7.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="{% static 'assets/img/recent-photos/recent-photos-8.jpg' %}" class="glightbox"><img src="{% static 'assets/img/recent-photos/recent-photos-8.jpg' %}" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Recent Photos Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  {% include 'components/footer.html' %}
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  {% render_block "js" %}
+</body>
+
+</html>

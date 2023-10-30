@@ -209,7 +209,12 @@ CMS_TEMPLATES = (
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right'),
-    ('index.html', 'MyTemplate'),
+    ('index.html', 'Home'),
+    ('events.html', 'Events'),
+    ('impact.html', 'Impact'),
+    ('about.html', 'About'),
+    ('fundraising.html', 'Fundraising'),
+    ('contact.html', 'Contact'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

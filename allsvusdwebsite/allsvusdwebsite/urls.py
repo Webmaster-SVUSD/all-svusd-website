@@ -6,10 +6,18 @@ from django.contrib import admin
 from django.contrib.sitemaps.views import sitemap
 from django.urls import include, path
 
+from . import views
 admin.autodiscover()
 
 urlpatterns = [
     path("sitemap.xml", sitemap, {"sitemaps": {"cmspages": CMSSitemap}}),
+    path('', views.home , name='home'),
+    path('about/', views.about , name='about'),
+    path('events/', views.events , name='events'),
+    path('contact/', views.contact , name='contact'),
+    path('donate/', views.donate , name='donate'),
+    # path('<int:pk>/', views.QuickLinkCardInfoView.as_view(),
+    #     name='quick-link-card'),
 ]
 
 

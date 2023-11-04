@@ -2,13 +2,13 @@ from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 from django.utils.translation import gettext_lazy as _
 
-from .models import Hello
+from .models import QuickLinkCardInfo
 
 @plugin_pool.register_plugin
-class HelloPlugin(CMSPluginBase):
-    model = Hello
-    name = _("Hello Plugin")
-    render_template = "hello_plugin.html"
+class QuickLinkCardPlugin(CMSPluginBase):
+    model = QuickLinkCardInfo
+    name = _("Quick Link Card")
+    render_template = "quick_link_card.html"
     cache = False
 
     def render(self, context, instance, placeholder):

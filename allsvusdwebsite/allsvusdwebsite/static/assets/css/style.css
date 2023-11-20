@@ -58,7 +58,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #0087e7;
+  background: #09353E;
   color: #fff;
 }
 
@@ -1488,17 +1488,39 @@ section .container {
 --------------------------------------------------------------*/
 #footer {
   /* background: #1d284b; */
-  background: #09353E;
-  color: #fff;
+  background: #71B8E6;
+  color: #09353E;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   padding: 30px 0;
+}
+
+#footer .container{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .container-left {
+  align-self: center;
+}
+
+#footer .container-right  {
+  width: 150px; /* Set the width of the container as needed */
+  height: auto; /* Maintain the aspect ratio */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+#footer .container-right .img-logo {
+  width: 100%; /* Make the image fill the container width */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any extra space below the image */
 }
 
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
+  color: #09353E;
   position: relative;
   /* font-family: "Poppins", sans-serif; */
   font-family: 'Proza Libre', sans-serif;
@@ -1514,15 +1536,15 @@ section .container {
 }
 
 #footer .social-links {
-  margin: 0 0 50px 0;
+  margin: 0 0 10px 0;
 }
 
 #footer .social-links a {
-  font-size: 35px;
+  font-size: 40px;
   display: inline-block;
   /* background: #074d7c; */
   background: #71B8E6;
-  color: #fff;
+  color: #09353E;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1533,15 +1555,15 @@ section .container {
   transition: 0.3s;
 }
 
-#footer .social-links a:hover {
-  /* background: #007ed8; */
-  background: #236591;
+/* #footer .social-links a:hover {
+  background: #09353E;
   color: #fff;
   text-decoration: none;
-}
+} */
 
 #footer .copyright {
   margin: 0 0 5px 0;
+  color: #09353E;
 }
 
 #footer .credits {
@@ -1549,10 +1571,10 @@ section .container {
 }
 
 #footer .credits a {
-  color: #006fbe;
+  color: #09353E;
   transition: 0.3s;
 }
 
 #footer .credits a:hover {
-  color: #008df1;
+  color: #09353E;
 }

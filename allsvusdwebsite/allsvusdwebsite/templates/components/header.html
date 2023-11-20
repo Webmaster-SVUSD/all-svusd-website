@@ -4,13 +4,10 @@
 <!-- ======= Header ======= -->
 <header id="header" > <!-- class="fixed-top" removed becaurse header fights with top spot for cms tool bar -->
     <div class="container d-flex align-items-center justify-content-between">
-      <div class="full-logo">
-        <a href="{% url 'home' %}" class="logo"><img src="{% static 'assets/img/svusd-transparent-logo.png' %}" alt="" class="img-fluid"></a>
-        <a href="{% url 'home' %}" class="logo-text"> A.L.L. SVUSD
-          <br>
-          <p> Supporting Dual Language Immersion <br>Stundets K-12 in SVUSD</p>
-        </a>
-      </div>
+      <!-- <div class="full-logo"> -->
+        <a href="{% url 'home' %}" class="logo"><img src="{% static 'assets/img/svusd-transparent-logo.png' %}" alt="" class="img-fluid"> A.L.L. SVUSD </a>
+        <!-- <a href="{% url 'home' %}" class="logo-text"></a> -->
+      <!-- </div> -->
       <nav id="navbar" class="navbar">
         <ul>
           {% show_menu 0 100 100 100 "components/custom_menu.html" %}
@@ -51,6 +48,7 @@
             </ul>
           </li> -->
         </ul>
+        <!-- TODO: insert language toggle -->
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->

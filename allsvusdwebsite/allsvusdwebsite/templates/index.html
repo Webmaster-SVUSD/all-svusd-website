@@ -2,7 +2,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE }}">
 
 <head>
   <meta charset="utf-8">
@@ -49,98 +49,49 @@
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(../static/assets/img/home-hero-image.jpg)">
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(../static/assets/img/hero-image-2.jpg)">
-        </div>
-
-        <!-- Slide 3 -->
-        <!-- <div class="carousel-item" style="background-image: url(../static/assets/img/hero-image-3.jpg)">
-        </div> -->
-
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-  </section><!-- End Hero -->
-
+  <div id="hero">
+      {% block Hero-Image %}
+        {% placeholder "Hero-Image" %}
+      {% endblock Hero-Image %}
+  </div><!-- End Hero -->
   <main id="main">
-
-    <!-- ======= My & Family Section ======= -->
     <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Support Dual Language Immersion Students TK-12 in SVUSD</h2>
-        </div>
         <div class="container">
-          <div class="row">
-            {% block QuickLinkContent %}
-	            {% placeholder "QuickLinkContent" %}
-            {% endblock QuickLinkContent %}
-          </div>
-        </div>
-            
-        <!-- <div class="row content">
-          <div class="col-lg-6">
-            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="our-story.html" class="btn-learn-more">Learn More</a>
-          </div>
-        </div> -->
-
+            {% block About-Section %}
+	            {% placeholder "About-Section" %}
+            {% endblock About-Section %}
       </div>
-    </section><!-- End My & Family Section -->
-    <!-- <section>
+    </section>
+    <!-- <section id="upcomimg-events">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <div class="quick-link-card">
-              <div><img src="{% static 'assets/img/quick-link/activities-img.png' %}" alt="" class="img-fluid"></div>
-              <h2>Activities</h2>
-              <p>Check out what we are up to! Join us in participating in the Dual Language Immersion program with Saddleback Unified School District</p>
-              <div>
-                <button>Learn More</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% block Upcoming-Events-Section %}
+          {% placeholder "Upcoming-Events-Section" %}
+        {% endblock Upcoming-Events-Section %}
       </div>
     </section> -->
+    <section id="quick-links">
+      <div class="container">
+        {% block Quick-Link-Section %}
+          {% placeholder "Quick-Link-Section" %}
+        {% endblock Quick-Link-Section %}
+      </div>
+    </section>
+    <section id="schools">
+      <div class="container">
+        {% block Schools-Section %}
+          {% placeholder "Schools-Section" %}
+        {% endblock Schools-Section %}
+      </div>
+    </section>
+    <section id="organizations">
+      <div class="container">
+        {% block Organizations-Section %}
+          {% placeholder "Organizations-Section" %}
+        {% endblock Organizations-Section %}
+      </div>
+    </section>
     <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+    <!-- <section id="features" class="features">
       <div class="container">
         <div class="section-title">
           <h3>The schools of the Dual Language Immersion Program work closely with prominent organizations to deliver an internationally-recognized education.</h3>
@@ -184,7 +135,8 @@
         </div>
 
       </div>
-    </section><!-- End Features Section -->
+    </section> -->
+    <!-- End Features Section -->
 
     <!-- ======= Recent Photos Section ======= -->
     <!-- <section id="recent-photos" class="recent-photos">

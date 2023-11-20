@@ -88,7 +88,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 
 STATICFILES_DIRS = (
@@ -178,12 +178,14 @@ INSTALLED_APPS = [
     'djangocms_style',
     'djangocms_googlemap',
     'djangocms_video',
-    'allsvusdwebsite'
+    'allsvusdwebsite',
+   
 ]
 
 LANGUAGES = (
     ## Customize this
     ('en', gettext('en')),
+   
 )
 
 CMS_LANGUAGES = {
@@ -196,6 +198,7 @@ CMS_LANGUAGES = {
             'public': True,
             'hide_untranslated': False,
         },
+       
     ],
     'default': {
         'redirect_on_fallback': True,
@@ -203,6 +206,8 @@ CMS_LANGUAGES = {
         'hide_untranslated': False,
     },
 }
+
+
 
 CMS_TEMPLATES = (
     ## Customize this
@@ -216,6 +221,8 @@ CMS_TEMPLATES = (
     ('fundraising.html', 'Fundraising'),
     ('contact.html', 'Contact'),
 )
+
+
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 

@@ -66,7 +66,23 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Event List Section ======= -->
+    <nav>
+      <ul class="menu right language-menu">{% language_chooser %}</ul>
+    </nav>
+
+
     <section id="event-list" class="event-list">
+    <div class="container">
+      <div class="row">
+        {% block QuickLinkContent %}
+          {% placeholder "QuickLinkContent" %}
+        {% endblock QuickLinkContent %}
+      </div>
+    </div>
+    </section>
+
+
+    <!-- <section id="event-list" class="event-list">
       <div class="container">
 
         <div class="row">
@@ -98,7 +114,7 @@
         </div>
 
       </div>
-    </section><!-- End Event List Section -->
+    </section>End Event List Section -->
 
   </main><!-- End #main -->
 

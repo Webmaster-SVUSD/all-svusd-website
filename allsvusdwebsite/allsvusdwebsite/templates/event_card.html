@@ -1,0 +1,18 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+
+<div class="col-md-6 col-lg-6">
+  <div class="event_card">
+   
+    <div><img src="{{instance.image.url}}" alt="" class="img-fluid"></div>
+    
+    <h2>{{ instance.title }}</h2>
+    <h3>Date: {{ instance.date }}</h3>
+    <h3>Time: {{ instance.time }}</h3>
+    <p>{{ instance.text_body|linebreaks }}</p>
+    <br>
+    <div class="center">
+      <a href="{{instance.link}}" target="_blank"><button>Register for Event</button></a>
+    </div> 
+  </div>
+</div>

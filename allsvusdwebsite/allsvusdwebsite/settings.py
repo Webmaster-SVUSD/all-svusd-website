@@ -216,6 +216,7 @@ CMS_TEMPLATES = (
     ('about.html', 'About'),
     ('fundraising.html', 'Fundraising'),
     ('contact.html', 'Contact'),
+    ('subpage_template.html', 'Subpage'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

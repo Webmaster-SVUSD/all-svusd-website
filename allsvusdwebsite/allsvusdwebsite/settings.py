@@ -184,6 +184,7 @@ INSTALLED_APPS = [
 LANGUAGES = (
     ## Customize this
     ('en', gettext('en')),
+    ('es', gettext('es')),
 )
 
 CMS_LANGUAGES = {
@@ -215,6 +216,7 @@ CMS_TEMPLATES = (
     ('about.html', 'About'),
     ('fundraising.html', 'Fundraising'),
     ('contact.html', 'Contact'),
+    ('subpage_template.html', 'Subpage'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

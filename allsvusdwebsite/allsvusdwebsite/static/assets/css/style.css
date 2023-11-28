@@ -1516,6 +1516,31 @@ a.text-link:hover {
   min-height: 600px;
 }
 
+
+/*--------------------------------------------------------------
+# Thermometer
+--------------------------------------------------------------*/
+
+.thermometer {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+}
+
+.goal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

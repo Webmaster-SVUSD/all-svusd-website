@@ -4,15 +4,44 @@
 <div class="col-md-6 col-lg-6">
   <div class="event_card">
    
+    {% if instance.image.url != "" %}
     <div><img src="{{instance.image.url}}" alt="" class="img-fluid"></div>
-    
+    {% endif %}
+
     <h2>{{ instance.title }}</h2>
     <h3>Date: {{ instance.date }}</h3>
     <h3>Time: {{ instance.time }}</h3>
     <p>{{ instance.text_body|linebreaks }}</p>
+
     <br>
+
+    {% if instance.link_1 != "" and instance.link1_button_info != ""%}
     <div class="center">
-      <a href="{{instance.link}}" target="_blank"><button>Register for Event</button></a>
+      <a href="{{instance.link_1}}" target="_blank"><button>{{instance.link1_button_info}}</button></a>
     </div> 
+    {% endif %}
+    <br>
+
+    {% if instance.link_2 != "" and instance.link2_button_info != ""%}
+    <div class="center">
+      <a href="{{instance.link_2}}" target="_blank"><button>{{instance.link2_button_info}}</button></a>
+    </div> 
+    {% endif %}
+    <br>
+
+    {% if instance.link_3 != "" and instance.link3_button_info != ""%}
+    <div class="center">
+      <a href="{{instance.link_3}}" target="_blank"><button>{{instance.link3_button_info}}</button></a>
+    </div> 
+    {% endif %}
+    <br>
+
+    {% if instance.link_4 != "" and instance.link4_button_info != "" %}
+    <div class="center">
+      <a href="{{instance.link_4}}" target="_blank"><button>{{instance.link4_button_info}}</button></a>
+    </div> 
+    {% endif %}
+    <br>
+
   </div>
 </div>

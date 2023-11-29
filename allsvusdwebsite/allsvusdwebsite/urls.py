@@ -16,8 +16,6 @@ urlpatterns = [
     path('events/', views.events , name='events'),
     path('contact/', views.contact , name='contact'),
     path('donate/', views.donate , name='donate'),
-    # path('<int:pk>/', views.QuickLinkCardInfoView.as_view(),
-    #     name='quick-link-card'),
 ]
 
 

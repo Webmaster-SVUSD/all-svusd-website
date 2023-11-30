@@ -31,5 +31,3 @@ class EventCardInfo(CMSPlugin):
     link4_button_info = models.CharField(max_length=500, default='', blank=True)
     link_4 = models.TextField(max_length=5000, default="", blank=True)
     text_body = models.TextField(max_length=5000, default='Text Body')
- 
-

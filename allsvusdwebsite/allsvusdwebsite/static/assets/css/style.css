@@ -1520,12 +1520,15 @@ a.text-link:hover {
 /*--------------------------------------------------------------
 # Thermometer
 --------------------------------------------------------------*/
-
+/* 
 .thermometer {
   width: 300px;
   height: 30px;
-  border: 1px solid #000;
+  border: 1px solid;
   position: relative;
+  background-color: #71B8E6;
+  width: auto;
+  height: 60px;
 }
 
 .progress {
@@ -1538,7 +1541,8 @@ a.text-link:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
+
 
 
 /*--------------------------------------------------------------

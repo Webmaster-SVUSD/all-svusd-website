@@ -4,18 +4,10 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="container">
-    <div class="container-left">
-      <!-- <h3>Follow the SVUSD Dual Language Immersion Program. </h3> -->
-      <h4>Join the Conversation!</h4>
-      <div class="social-links">
-        <a href="#" class="facebook"><i class="bx bxl-facebook-circle"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram-alt"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>A.L.L SVUSD</span></strong>. All Rights Reserved
-      </div>
-    </div>
-    <div class="container-right"><img src="{% static 'assets/img/A.L.L SVUSD Logos/B&W_SVUSD_Logo.png' %}" alt="SVUSD Logo" class="img-logo"></div>
+    {% block footer %}
+	            {% placeholder "footer" %}
+            {% endblock footer %}
+
   </div>   
       
       <!-- <div class="credits"> -->

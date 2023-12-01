@@ -1611,3 +1611,62 @@ a.text-link:hover {
 #footer .credits a:hover {
   color: #09353E;
 }
+
+.event_card {
+  margin: 1%;
+  background-color: rgb(236, 236, 236);
+  /* text-align: center; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px; 
+  /* position:relative; */
+}
+
+.event_card img {
+  width: 100%;
+
+}
+
+.event_card h2 {
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+  margin: 15px;
+}
+
+.event_card h3 {
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+  margin: 15px;
+}
+
+.event_card p {
+  margin: 0px 15px 15px 15px;
+}
+
+.event_card button {
+  color: #ffffff;
+  transition: 0.3s;
+  animation-delay: 0.8s;
+  font-style: oblique;
+  padding:5px;
+  border: 2px solid #71B8E6;
+  background-color: #71B8E6;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 15px;
+  margin-bottom: 25px;
+  
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+.event_card button:hover{
+  color: #71B8E6;
+  border: 2px solid #71B8E6;
+  background-color: #ffffff;
+}

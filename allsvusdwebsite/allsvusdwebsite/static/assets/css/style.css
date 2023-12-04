@@ -333,111 +333,6 @@ p{
   width: 100%;
 }
 
-/* #hero .carousel,
-#hero .carousel-inner,
-#hero .carousel-item,
-#hero .carousel-item::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-#hero .carousel-item {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#hero .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  top: 70px;
-  left: 50px;
-  right: 50px;
-}
-
-#hero .container {
-  text-align: center;
-}
-
-#hero h2 {
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-#hero p {
-  animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fff;
-}
-
-#hero .carousel-inner .carousel-item {
-  transition-property: opacity;
-  background-position: center top;
-}
-
-#hero .carousel-inner .carousel-item,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-  opacity: 0;
-}
-
-#hero .carousel-inner .active,
-#hero .carousel-inner .carousel-item-next.carousel-item-start,
-#hero .carousel-inner .carousel-item-prev.carousel-item-end {
-  opacity: 1;
-  transition: 0.5s;
-}
-
-#hero .carousel-control-next-icon,
-#hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 30px;
-  line-height: 0;
-  width: auto;
-  height: auto;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
-  transition: 0.3s;
-  color: rgba(255, 255, 255, 0.5);
-  width: 54px;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#hero .carousel-control-next-icon:hover,
-#hero .carousel-control-prev-icon:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.8);
-}
-
-#hero .carousel-indicators li {
-  list-style-type: none;
-  cursor: pointer;
-  background: #fff;
-  overflow: hidden;
-  border: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50px;
-  opacity: 0.6;
-  transition: 0.3s;
-}
-
-#hero .carousel-indicators li.active {
-  opacity: 1;
-  background: #71B8E6;
-} */
-
 #hero .btn-get-started {
   font-family: 'Proza Libre', sans-serif;
   font-weight: 500;
@@ -1353,7 +1248,7 @@ section .container {
 }
 
 .card-header img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .card-body {
@@ -1472,15 +1367,11 @@ a.text-link:hover {
 # Quick Link Cards
 --------------------------------------------------------------*/
 
-
-
 .quick-link-card {
   margin: 1%;
   background-color: #ffffff;
-  /* text-align: center; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 100%;
-  /* position:relative; */
 }
 
 .quick-link-card img {
@@ -1525,7 +1416,6 @@ a.text-link:hover {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  /* background: #1d284b; */
   background: #71B8E6;
   color: #09353E;
   font-size: 14px;
@@ -1560,7 +1450,6 @@ a.text-link:hover {
   font-weight: 700;
   color: #09353E;
   position: relative;
-  /* font-family: "Poppins", sans-serif; */
   font-family: 'Proza Libre', sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
@@ -1580,7 +1469,6 @@ a.text-link:hover {
 #footer .social-links a {
   font-size: 40px;
   display: inline-block;
-  /* background: #074d7c; */
   background: #71B8E6;
   color: #09353E;
   line-height: 1;
@@ -1592,12 +1480,6 @@ a.text-link:hover {
   height: 50px;
   transition: 0.3s;
 }
-
-/* #footer .social-links a:hover {
-  background: #09353E;
-  color: #fff;
-  text-decoration: none;
-} */
 
 #footer .copyright {
   margin: 0 0 5px 0;

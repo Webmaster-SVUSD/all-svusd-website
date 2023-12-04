@@ -1,10 +1,3 @@
-/**
-* Template Name: MeFamily
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/family-multipurpose-html-bootstrap-template-free/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -33,7 +26,7 @@ h6 {
   font-family: 'Proza Libre', sans-serif;
 }
 
-p{
+p {
   margin-bottom:.5rem;
 }
 
@@ -95,6 +88,17 @@ p{
 #header .logo img {
   max-height: 95px;
   padding-right: 10px;
+}
+
+@media (max-width: 991px) {
+  #header .logo{
+    font-size: 20px;
+  }
+
+  #header .logo img {
+    max-height: 75px;
+    padding-right: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -522,135 +526,9 @@ section .container {
 }
 
 .about .content .btn-learn-more:hover {
-  /* background: #006fbe; */
   background: #09353E;
   color: #fff;
   text-decoration: none;
-}
-
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-.features .icon-box {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.features .icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 130px;
-  background: #fff;
-  margin-bottom: 20px;
-  transition: 0.5s;
-  overflow: hidden;
-  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
-}
-
-.features .icon i {
-  line-height: 0;
-  color: #006fbe;
-  font-size: 34px;
-}
-
-
-.features .icon-box:hover .icon {
-  box-shadow: 0px 0 25px rgba(0, 111, 190, 0.3);
-}
-
-.features .title {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 18px;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.features .title a {
-  color: #09353E;
-  transition: 0.3s;
-}
-
-.features .title a:hover {
-  color: #71B8E6;
-}
-
-.features .title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 2px;
-  background: #71B8E6;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-
-.features .description {
-  line-height: 24px;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
-# Recent Photos
---------------------------------------------------------------*/
-.recent-photos {
-  overflow: hidden;
-}
-
-.recent-photos .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.recent-photos .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #006fbe;
-}
-
-.recent-photos .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #006fbe;
-}
-
-.recent-photos .owl-nav,
-.recent-photos .owl-dots {
-  margin-top: 25px;
-  text-align: center;
-}
-
-.recent-photos .owl-item {
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
-}
-
-.recent-photos .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #95d3ff !important;
-}
-
-.recent-photos .owl-dot.active {
-  background-color: #006fbe !important;
-}
-
-.recent-photos .gallery-carousel .owl-stage-outer {
-  overflow: visible;
-}
-
-.recent-photos .gallery-carousel .center {
-  border: 6px solid #006fbe;
-  margin: -10px;
-  box-sizing: content-box;
-  padding: 4px;
-  background: #fff;
-  z-index: 1;
 }
 
 /*--------------------------------------------------------------
@@ -706,367 +584,6 @@ section .container {
   .breadcrumbs ol li {
     display: inline-block;
   }
-}
-
-/*--------------------------------------------------------------
-# Story Intro
---------------------------------------------------------------*/
-.story-intro .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.story-intro .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.story-intro .content ul li {
-  padding-bottom: 10px;
-}
-
-.story-intro .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #006fbe;
-}
-
-.story-intro .content p:last-child {
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Featured Members
---------------------------------------------------------------*/
-.featured-members .content+.content {
-  margin-top: 100px;
-}
-
-.featured-members .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.featured-members .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.featured-members .content ul li {
-  padding-bottom: 10px;
-}
-
-.featured-members .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #006fbe;
-}
-
-.featured-members .content p:last-child {
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Members
---------------------------------------------------------------*/
-.members {
-  background: #fff;
-  padding: 60px 0;
-}
-
-.members .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-.members .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.members .member .social {
-  position: absolute;
-  left: 0;
-  bottom: -40px;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: bottom ease-in-out 0.4s;
-  text-align: center;
-  background: rgba(0, 111, 190, 0.8);
-}
-
-.members .member .social a {
-  transition: color 0.3s;
-  color: #fff;
-  margin: 0 10px;
-  padding-top: 8px;
-  display: inline-block;
-}
-
-.members .member .social a:hover {
-  color: #006fbe;
-}
-
-.members .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.members .member .member-info h4 {
-  font-weight: 700;
-  margin: 15px 0 5px 0;
-  font-size: 18px;
-}
-
-.members .member .member-info span {
-  display: block;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 15px;
-  color: #006fbe;
-}
-
-.members .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.members .member:hover .social {
-  bottom: 0;
-  opacity: 1;
-  transition: bottom ease-in-out 0.4s;
-}
-
-/*--------------------------------------------------------------
-# Event List
---------------------------------------------------------------*/
-.event-list .card {
-  border: 0;
-  padding: 0 30px;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.event-list .card-img {
-  width: calc(100% + 60px);
-  margin-left: -30px;
-  overflow: hidden;
-  z-index: 9;
-  border-radius: 0;
-}
-
-.event-list .card-img img {
-  max-width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-.event-list .card-body {
-  z-index: 10;
-  background: #fff;
-  border-top: 4px solid #fff;
-  padding: 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  margin-top: -60px;
-  transition: 0.3s;
-}
-
-.event-list .card-title {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #24325d;
-}
-
-.event-list .card-title a {
-  color: #24325d;
-  transition: 0.3s;
-}
-
-.event-list .card-text {
-  color: #5e5e5e;
-}
-
-.event-list .read-more a {
-  color: #777777;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  transition: 0.3s;
-}
-
-.event-list .read-more a:hover {
-  color: #006fbe;
-}
-
-.event-list .card:hover img {
-  transform: scale(1.1);
-}
-
-.event-list .card:hover .card-body {
-  border-color: #006fbe;
-}
-
-.event-list .card:hover .card-body .card-title a {
-  color: #006fbe;
-}
-
-/*--------------------------------------------------------------
-# Gallery
---------------------------------------------------------------*/
-.gallery .gallery-item {
-  margin-bottom: 30px;
-}
-
-.gallery #gallery-flters {
-  padding: 0;
-  margin: 0 auto 25px auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-}
-
-.gallery #gallery-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.3s;
-}
-
-.gallery #gallery-flters li:hover,
-.gallery #gallery-flters li.filter-active {
-  color: #006fbe;
-}
-
-.gallery #gallery-flters li:last-child {
-  margin-right: 0;
-}
-
-.gallery .gallery-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(36, 50, 93, 0.6);
-}
-
-.gallery .gallery-wrap::before {
-  content: "";
-  background: rgba(36, 50, 93, 0.6);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.gallery .gallery-wrap .gallery-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery .gallery-wrap .gallery-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.gallery .gallery-wrap .gallery-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.gallery .gallery-wrap .gallery-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.gallery .gallery-wrap .gallery-info p {
-  color: #ffffff;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-
-.gallery .gallery-wrap .gallery-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.gallery .gallery-wrap .gallery-links a {
-  color: #fff;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.gallery .gallery-wrap .gallery-links a:hover {
-  color: #25a4ff;
-}
-
-.gallery .gallery-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.gallery .gallery-wrap:hover .gallery-info {
-  opacity: 1;
-}
-
-.gallery .gallery-wrap:hover .gallery-info::before {
-  top: 15px;
-  left: 15px;
-}
-
-.gallery .gallery-wrap:hover .gallery-info::after {
-  bottom: 15px;
-  right: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -1234,6 +751,7 @@ section .container {
   border: none;
   border-radius: 0px;
   height: 100%;
+  margin-bottom: 15px;
 }
 
 .card-header {
@@ -1321,90 +839,6 @@ a.text-link {
 a.text-link:hover {
   color: #09353E;
   text-decoration: underline;
-}
-
-
-
-/* Donate Page */
-
-
-/*--------------------------------------------------------------
-# Organization
---------------------------------------------------------------*/
-/* #organizations .row {
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: none;
-  border-radius: 0px;
-  height: 100%;
-} */
-
-/* #organizations .col {
-  display: flex;
-}
-
-#organizations img {
-  max-height: 200px;
-  margin:auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#organizations p {
-  font-size: 25px;
-}
-
-#schools img {
-  margin:auto;
-  max-height: 250px;
-}
-
-#schools .card-body {
-  display: flex;
-} */
-
-/*--------------------------------------------------------------
-# Quick Link Cards
---------------------------------------------------------------*/
-
-.quick-link-card {
-  margin: 1%;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 100%;
-}
-
-.quick-link-card img {
-  width: 100%;
-}
-
-.quick-link-card h2 {
-  font-size: 25px;
-  color: #09353E;
-  margin: 15px;
-}
-
-.quick-link-card p {
-  margin: 0px 15px 15px 15px;
-}
-
-.quick-link-card button {
-  color: #ffffff;
-  transition: 0.3s;
-  animation-delay: 0.8s;
-  font-style: oblique;
-  padding:5px;
-  border: 2px solid #71B8E6;
-  background-color: #71B8E6;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 15px;
-  margin-bottom: 10px;
-}
-
-.quick-link-card button:hover{
-  color: #71B8E6;
-  border: 2px solid #71B8E6;
-  background-color: #ffffff;
 }
 
 .embedded-video {
@@ -1500,13 +934,15 @@ a.text-link:hover {
   color: #09353E;
 }
 
+/*--------------------------------------------------------------
+# Event Card
+--------------------------------------------------------------*/
+
 .event_card {
   margin: 1%;
   background-color: rgb(236, 236, 236);
-  /* text-align: center; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 20px; 
-  /* position:relative; */
 }
 
 .event_card img {
@@ -1562,9 +998,5 @@ a.text-link:hover {
 /* FAQ Table */
 
 td, tr {
-  background-color: #71B8E6;
-}
-
-td div {
   background-color: #71B8E6;
 }

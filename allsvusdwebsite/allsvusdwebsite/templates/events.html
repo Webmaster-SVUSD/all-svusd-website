@@ -48,7 +48,6 @@
   <!-- ======= Header ======= -->
   {% include 'components/header.html' %}
   <!-- End Header -->
-
   <main id="main">
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -64,7 +63,9 @@
 
       </div>
     </section><!-- End Breadcrumbs -->
-
+  {% block content %}
+	  {% placeholder "content" %}
+  {% endblock content %}
     <!-- ======= Event List Section ======= -->
 
     <section id="event-list" class="event-list">

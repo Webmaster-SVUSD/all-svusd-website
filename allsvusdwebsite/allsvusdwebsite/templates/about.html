@@ -64,7 +64,9 @@
 
       </div>
     </section><!-- End Breadcrumbs -->
-
+  {% block content %}
+	  {% placeholder "content" %}
+  {% endblock content %}
     <section id="quick-links">
       <div class="container">
         {% block Quick-Link-Section %}
